@@ -36,12 +36,8 @@
 
             <div class="hero-info">
                 <div class="info-item">
-                    <span class="info-label">일시</span>
-                    <span class="info-value">2026.05.12 (화) 08:30~17:30</span>
-                </div>
-                <div class="info-item">
-                    <span class="info-label">담당자</span>
-                    <span class="info-value">교육팀 송현일 부장(Ⅱ)</span>
+                    <span class="info-label">교육일정</span>
+                    <span class="info-value">2026.05.12(화)~5.14(목), 직위별 1일 8시간 교육</span>
                 </div>
             </div>
         </div>
@@ -202,8 +198,26 @@
             <div class="venue-info">
                 <h3>유한양행 본사</h3>
                 <p>서울 동작구 노량진로 74</p>
-                <a href="https://map.naver.com/p/search/%EC%9C%A0%ED%95%9C%EC%96%91%ED%96%89%20%EB%B3%B8%EC%82%AC/place/11628586" target="_blank" rel="noopener noreferrer"
-                    class="btn btn-primary">교육장소 약도 보기</a>
+                <!--
+                    * 카카오맵 - 약도서비스
+                    * 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+                    * 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+                -->
+                <!-- 1. 약도 노드 -->
+                <div id="daumRoughmapContainer1777175024737" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <!-- 2. 설치 스크립트 -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                    new daum.roughmap.Lander({
+                        "timestamp" : "1777175024737",
+                        "key" : "mcxpi58bavt",
+                        "mapWidth" : "640",
+                        "mapHeight" : "360"
+                    }).render();
+                </script>
             </div>
         </div>
     </section>
@@ -218,37 +232,37 @@
                 <details class="faq-item">
                     <summary>교육은 몇 시부터 몇 시까지 진행되나요?</summary>
                     <div class="faq-content">
-                        <p>교육은 2026년 4월 17일 10:00부터 17:00까지 진행됩니다. 점심시간은 12:20~13:20입니다.</p>
+                        <p>교육은 08:30부터 17:30까지 진행됩니다. 점심시간은 12:00~13:00 입니다.</p>
                     </div>
                 </details>
                 <details class="faq-item">
                     <summary>교육 장소는 어디인가요?</summary>
                     <div class="faq-content">
-                        <p>현대제철 당진제철소 교육장 3층 러닝랩에서 진행됩니다. 현장 안내 표지와 QR 페이지를 함께 확인해 주세요.</p>
+                        <p>대면 교육은 본사 15층 타운홀미팅룸과 4층 대연수실에서 진행됩니다. 비대면 교육은 사내 회의실 또는 본인 자택에서 온라인 ZOOM 접속을 통해 교육을 받으실 수 있습니다.</p>
                     </div>
                 </details>
                 <details class="faq-item">
                     <summary>반드시 가져와야 할 준비물이 있나요?</summary>
                     <div class="faq-content">
-                        <p>노트북, 충전기, 사내 또는 실습용 GitHub 계정 정보가 필요합니다. 모바일만으로는 실습이 어렵습니다.</p>
+                        <p>기본 준비물은 교재, 필기구이며, 비대면 교육 대상자는 노트북(마이크, 카메라 기능 포함), 충전기가 추가로 필요합니다.</p>
                     </div>
                 </details>
                 <details class="faq-item">
-                    <summary>사전과제가 있나요?</summary>
+                    <summary>거래처 약속으로 인해 2시 정도 자리를 비우거나, 일찍 교육장을 벗어날 경우 수료 처리가 되나요?</summary>
                     <div class="faq-content">
-                        <p>담당 중인 교육과정 1개와 반복업무 1개를 간단히 메모해 오시면 실습에 바로 활용할 수 있습니다.</p>
+                        <p>업무로 인한 경우라 하더라도, 80%(8시간 기준, 6시간 30분 교육시 수료 가능) 이상 교육을 수강하시지 않으면 미수료 처리 됩니다.</p>
                     </div>
                 </details>
                 <details class="faq-item">
-                    <summary>회사 PC에서 외부 AI 서비스를 못 쓰면 어떻게 하나요?</summary>
+                    <summary>중요 업무 일정으로 인해, 교육에 참석이 어려울 경우는 어떻게 하나요?</summary>
                     <div class="faq-content">
-                        <p>실습은 샘플 데이터 중심으로 진행하며, 외부 서비스 사용 범위는 현장 가이드와 보안정책에 맞춰 안내합니다.</p>
+                        <p>승진자 및 신임관리자 교육은 의무 교육 과정으로, 불참 사유 발생시 e-HR시스템 - 교육신청 - '교육취소'에서 문서를 상신하셔야 합니다. (사업본부장 전결) 단, 일정 변경의 경우는 부서장 전결(부서장은 본부장 전결)로 승인 받으신 후, '교육신청 및 결과보고' - '교육과정 리스트'에서 가능한 교육 일정을 선택하시어 교육을 재신청해주셔야 합니다.</p>
                     </div>
                 </details>
                 <details class="faq-item">
-                    <summary>교육 자료는 어디서 받나요?</summary>
+                    <summary>교재는 언제 수령할 수 있나요?</summary>
                     <div class="faq-content">
-                        <p>마이크로사이트의 자료 다운로드 버튼 또는 현장 QR 코드를 통해 배포 예정입니다.</p>
+                        <p>대면 교육 대상자는 본사에서 교육 당일 배포 예정이며, 그 외 비대면 근무자는 교육일 1주일 전까지 근무지로 배송될 예정입니다.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -258,9 +272,9 @@
                     </div>
                 </details>
                 <details class="faq-item">
-                    <summary>실습 결과물은 바로 업무에 써도 되나요?</summary>
+                    <summary>출석 체크는 어떻게 하나요?</summary>
                     <div class="faq-content">
-                        <p>사내 자료는 비식별화 또는 샘플 데이터로 전환 후 사용하고, 외부 배포 전에는 반드시 담당자가 최종 검수해야 합니다.</p>
+                        <p>대면 교육은 환급 과정으로 교육 시작시와 종료시 스마트폰으로 QR 스캔을 통해 출석 체크하실 수 있으며, 비대면 교육은 ZOOM 접속시, 비디오 화면 캡처를 통해 출석 처리할 예정 입니다.</p>
                     </div>
                 </details>
             </div>
