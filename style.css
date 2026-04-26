@@ -625,8 +625,10 @@ h1, h2, h3, h4 {
     /* Responsive Map */
     .root_daum_roughmap {
         width: 100% !important;
+        height: 180px !important;
     }
     .wrap_map {
         width: 100% !important;
+        height: 180px !important;
     }
 }
