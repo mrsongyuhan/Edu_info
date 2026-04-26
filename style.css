@@ -36,7 +36,7 @@ body {
 }
 
 .section-padding {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .bg-light {
@@ -93,7 +93,7 @@ h1, h2, h3, h4 {
 
 /* Hero Section */
 .hero {
-    padding: 120px 0 80px;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -573,7 +573,7 @@ h1, h2, h3, h4 {
 /* Responsive */
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .hero-subtitle {
@@ -620,5 +620,13 @@ h1, h2, h3, h4 {
 
     .nav-links {
         display: none; /* simple mobile nav approach */
+    }
+
+    /* Responsive Map */
+    .root_daum_roughmap {
+        width: 100% !important;
+    }
+    .wrap_map {
+        width: 100% !important;
     }
 }
